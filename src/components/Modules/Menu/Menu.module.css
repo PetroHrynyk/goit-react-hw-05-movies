@@ -1,0 +1,35 @@
+.menuList {
+    display: flex;
+    list-style: none;
+    padding: 30px;
+align-items: center;
+justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgba(214, 245, 229, 0.63);
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+} 
+
+.menuItem:not(:last-child) {
+    margin-right: 30px;
+}
+
+.link {
+    display: inline;
+    text-decoration: none;
+    padding: 10px 120px;
+    background-color: rgb(79, 252, 252);
+    color: black;
+    cursor: pointer;
+    border-radius: 6px;
+    font-style: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.link:hover{background-color: rgb(159, 225, 236);}
+.link.active {
+    background-color: rgb(226, 53, 53);
+    color: rgb(200, 238, 238);
+}
