@@ -13,10 +13,7 @@ export default function CastPage() {
     error: null,
   });
   const { id } = useParams();
-  // const location = useLocation();
-  // const navigate = useNavigate();
-
-  // const goBack = () => navigate(-1);
+ 
 
   useEffect(() => {
     const fetchMovies = async () => {
