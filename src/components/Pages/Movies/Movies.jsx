@@ -41,7 +41,7 @@ export default function MovieSearchPage() {
     if (search) {
       fetchMovies();
     }
-  }, [search]);
+  }, );
 
   const changeSearch = ({ search }) => {
     setSearchParams({ search });
