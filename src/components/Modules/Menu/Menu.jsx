@@ -9,7 +9,7 @@ export default function Menu() {
 
   const element = items.map(({ id, to, text }) => (
     <li className={s.menuItem} key={id}>
-      <NavLink className={getClassName} to={to}>
+      <NavLink className={getClassName} to={to} end>
         {text}
       </NavLink>
     </li>
@@ -19,4 +19,4 @@ export default function Menu() {
       <ul className={s.menuList}>{element}</ul>
     </div>
   );
-}
+} 
