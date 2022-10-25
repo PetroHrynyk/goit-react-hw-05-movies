@@ -14,10 +14,10 @@ export const MoviesList = () => {
     <>
       {movieList && (
         <Box as="ul" m={0} pl={3}>
-          {movieList.map(({ id, title }) => {
+          {movieList.map(({ id, title, vote_average }) => {
             return (
               <li key={id}>
-                <Link to={`${id}`}>{title}</Link>
+                <Link to={`${id}`}>{title} <span   fontWeight='600'>-----Rating:{vote_average}</span></Link>
               </li>
             );
           })}
